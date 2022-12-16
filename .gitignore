@@ -1,0 +1,91 @@
+/vendor/
+/.web-server-pid
+phpunit.stderr
+phpunit.stdout
+
+# test cache folders
+/tests/Resources/cache/
+
+
+# public
+/public/bundles
+/public/uploads
+/public/build
+
+# composer
+/composer.phar
+composer.lock
+/vendor
+
+# npm
+package-lock.json
+node_modules/
+yarn.lock
+
+.php-cs-fixer.cache
+.eslintcache
+.env.local
+
+# phpunit
+.phpunit
+phpunit.xml
+.phpunit.result.cache
+
+# IDEs
+/.idea
+*.iml
+*~
+.web-server-pid
+
+# System files
+.DS_Store
+
+# Styleguide
+/styleguide
+
+# IDEs
+.idea
+*.iml
+
+# Jackrabbit
+jackrabbit-standalone*
+jackrabbit/*
+
+# Symfony CLI
+# https://symfony.com/doc/current/setup/symfony_server.html#different-php-settings-per-project
+/php.ini
+/.php-version
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###

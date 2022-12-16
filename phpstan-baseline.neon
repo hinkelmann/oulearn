@@ -1,0 +1,16 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method handle\\(\\) on Symfony\\\\Component\\\\HttpKernel\\\\HttpKernelInterface\\|null\\.$#"
+			count: 1
+			path: public/index.php
+
+		-
+			message: "#^Cannot call method terminate\\(\\) on Symfony\\\\Component\\\\HttpKernel\\\\HttpKernelInterface\\|null\\.$#"
+			count: 1
+			path: public/index.php
+
+		-
+			message: "#^Method App\\\\Kernel\\:\\:configureContainer\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/Kernel.php
